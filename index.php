@@ -1,22 +1,7 @@
 <h1 id="springbootquickstart">Spring Boot Quickstart</h1>
 
-<h3 id="unit1introduction">Unit 1 Introduction</h3>
 
-<ul>
-<li><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></li>
 
-<li><a href="#Maven">Maven</a> </li>
-
-<li><a href="#Creating-a-Spring-Boot-project">Creating a Spring Boot project</a> </li>
-
-<li><a href="#Starting-a-Spring-Boot-application">Starting a Spring Boot application</a> </li>
-
-<li><a href="#Spring-Boot-startup-steps">Spring Boot startup steps</a> </li>
-
-<li><a href="#Adding-a-REST-Controller">Adding a REST Controller</a> </li>
-
-<li><a href="#Returning-Objects-From-Controller">Returning Objects From Controller</a> </li>
-</ul>
 
 <h3 id="unit2springmvctheviewtier">Unit 2 Spring MVC: The View Tier</h3>
 
@@ -77,3 +62,67 @@
 <h2 id="unit1introduction-1">Unit 1 Introduction</h2>
 
 <h5 id="settingupdevelopmentenvironmentsettingupdevelopmentenvironment"><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></h5>
+
+
+
+<body data-gr-c-s-loaded="true">
+<nav id="navbar" class="container-fluid navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href=".">Spring Boot QuickStart</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<div style="background-color:#fff" class="jumbotron">
+<article>
+<h1>Spring Boot &amp; Java: Getting Started</h1>
+<ul>
+    <li>
+        <a href="#unit1">Unit 1 Introduction</a>
+        <ul>
+            <li><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></li>
+            <li><a href="#Maven">Maven</a> </li>
+            <li><a href="#Creating-a-Spring-Boot-project">Creating a Spring Boot project</a> </li>
+            <li><a href="#Starting-a-Spring-Boot-application">Starting a Spring Boot application</a> </li>
+            <li><a href="#Spring-Boot-startup-steps">Spring Boot startup steps</a> </li>
+            <li><a href="#Adding-a-REST-Controller">Adding a REST Controller</a> </li>
+            <li><a href="#Returning-Objects-From-Controller">Returning Objects From Controller</a> </li>
+        </ul>
+    </li>
+</ul>
+
+
+
+<!-- #Setting-Up-Development-Environment -->
+<p><a name="Setting-Up-Development-Environment"></a></p>
+<h2><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></h2>
+
+
+
+
+
+
+
+
+
+</article></div>
+
+
+
+
+<footer class="footer">
+      <div class="container-fluid">
+        <span class="text-muted"> <p style="color:white; font:bold;" class="text-center">©SpringBootQuickStart</p> </span>
+      </div>
+</footer>
+</body>
