@@ -1,3 +1,4 @@
+<html>
 <head>
   <title>Spring Boot Quickstart</title>
   <meta charset="utf-8">
@@ -134,3 +135,4 @@
       </div>
 </footer>
 </body>
+</html>
