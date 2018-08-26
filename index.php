@@ -1,4 +1,12 @@
-<h1 id="springbootquickstart">Spring Boot Quickstart</h1>
+<head>
+  <title>Spring Boot Quickstart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!-- <h1 id="springbootquickstart">Spring Boot Quickstart</h1>
 
 
 
@@ -62,7 +70,7 @@
 <h2 id="unit1introduction-1">Unit 1 Introduction</h2>
 
 <h5 id="settingupdevelopmentenvironmentsettingupdevelopmentenvironment"><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></h5>
-
+ -->
 
 
 <body data-gr-c-s-loaded="true">
