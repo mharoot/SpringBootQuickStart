@@ -1,5 +1,3 @@
-{::nomarkdown}
-
 <h1 id="springbootquickstart">Spring Boot Quickstart</h1>
 
 <h3 id="unit1introduction">Unit 1 Introduction</h3>
@@ -79,5 +77,3 @@
 <h2 id="unit1introduction-1">Unit 1 Introduction</h2>
 
 <h5 id="settingupdevelopmentenvironmentsettingupdevelopmentenvironment"><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></h5>
-
-{:/}
