@@ -4,84 +4,107 @@
   <title>Spring Boot Quick Start</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="./assets/css/sidebar.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="./assets/js/modify-bootstrap-3.1.0.js" type="text/javascript"></script>
 </head>
 
-<body class="container">
-<!-- <nav id="navbar" class="container-fluid navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="./">Spring Boot Quickstart</a>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
+<!-- sidebar here -->
+<body>
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <link href="./assets/css/font-awesome-4.0.3.css" rel="stylesheet">
+  <div style="  min-width: 280px;
+  height: 25vh;
+  min-height: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;" class="row">
+    <div class="col-sm-4 col-md-3 sidebar">
+      <div class="mini-submenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </div>
+      <div class="list-group">
+          <span href="#" class="list-group-item active">
+              Submenu
+              <span class="pull-right" id="slide-submenu">
+                  <i class="fa fa-times"></i>
+              </span>
+          </span>
+          <a href="./" class="list-group-item">Home</a>
+          <a href="#unit1" class="list-group-item">Unit 1</a>
+          <a href="#unit2" class="list-group-item">Unit 2</a>
+          <a href="#unit3" class="list-group-item">Unit 3</a>
+          <a href="#unit4" class="list-group-item">Unit 4</a>
+          <a href="#unit5" class="list-group-item">Unit 5</a>
+      </div>        
+    </div>
   </div>
-</nav> -->
-</br>
-</br>
-</br>
-</br>
-<div style="background-color:#fff" class="jumbotron">
-<article>
-<ul>
-    <li>
-        <a href="#unit1">Unit 1 Introduction</a>
-        <ul>
-            <li><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></li>
-            <li><a href="#Maven">Maven</a> </li>
-            <li><a href="#Creating-a-Spring-Boot-project">Creating a Spring Boot project</a> </li>
-            <li><a href="#Starting-a-Spring-Boot-application">Starting a Spring Boot application</a> </li>
-            <li><a href="#Spring-Boot-startup-steps">Spring Boot startup steps</a> </li>
-            <li><a href="#Adding-a-REST-Controller">Adding a REST Controller</a> </li>
-            <li><a href="#Returning-Objects-From-Controller">Returning Objects From Controller</a> </li>
-        </ul>
-    </li>
-    <li>
-      <a href="#unit2">Unit 2 Spring MVC: The View Tier</a>
-      <ul>
-        <li><a href="#How-Spring-MVC-Works">How Spring MVC Works</a></li>
-        <li><a href="#The-REST-API-we'll-build">The REST API we'll build</a></li>
-        <li><a href="#Creating-a-business-service">Creating a business service</a></li>
-        <li><a href="#Getting-a-single-resource">Getting a single resource</a></li>
-        <li><a href="#Creating-a-new-resource-using-POST">Creating a new resource using POST</a></li>
-        <li><a href="#Implementing-Update-and-Delete">Implementing Update and Delete</a></li>
-      </ul>
-    </li>
-    <li>    
-      <a href="#unit3">Unit 3 Booting Spring Boot</a>
-      <ul>
-        <li><a href="#Unit-Overview">Unit Overview</a></li>
-        <li><a href="#Using-Spring-Initializr">Using Spring Initializr</a></li>
-        <li><a href="#Using-Spring-Boot-CLI">Using Spring Boot CLI</a></li>
-        <li><a href="#Using-the-STS-IDE">Using the STS IDE</a></li>
-        <li><a href="#Using-application-properties">Using application properties</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#unit4">Unit 4 Spring Data JPA: The Data Tier</a>
-      <ul>
-        <li><a href="#What-is-JPA?">What is JPA?</a></li>
-        <li><a href="#Adding-Spring-Data-JPA">Adding Spring Data JPA</a></li>
-        <li><a href="#Creating-a-Spring-Data-JPA-Repository">Creating a Spring Data JPA Repository</a></li>
-        <li><a href="#Making-Crud-Operations-with-Repository">Making Crud Operations with Repository</a></li>
-        <li><a href="#Adding-Course-APIs">Adding Course APIs</a></li>
-        <li><a href="#Adding-Entity-Relationship-and-Extending-Repository">Adding Entity Relationship and Extending Repository</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#unit5">Unit 5 Deployment and monitoring</a>
-      <ul>
-        <li><a href="#Packaging-and-running-a-Spring-Boot-app">Packaging and running a Spring Boot app</a></li>
-        <li><a href="#Spring-Boot-Actuator">Spring Boot Actuator</a></li>
-      </ul>
-    </li>
-</ul>
+  <div class="container">
+    <div class="container-fluid">
+        </br>
+        </br>
+        </br>
+        </br>
+        <div style="background-color:#fff" class="jumbotron">
+          <article>
+            <ul>
+                <li>
+                    <a href="#unit1">Unit 1 Introduction</a>
+                    <ul>
+                        <li><a href="#Setting-Up-Development-Environment">Setting Up Development Environment</a></li>
+                        <li><a href="#Maven">Maven</a> </li>
+                        <li><a href="#Creating-a-Spring-Boot-project">Creating a Spring Boot project</a> </li>
+                        <li><a href="#Starting-a-Spring-Boot-application">Starting a Spring Boot application</a> </li>
+                        <li><a href="#Spring-Boot-startup-steps">Spring Boot startup steps</a> </li>
+                        <li><a href="#Adding-a-REST-Controller">Adding a REST Controller</a> </li>
+                        <li><a href="#Returning-Objects-From-Controller">Returning Objects From Controller</a> </li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="#unit2">Unit 2 Spring MVC: The View Tier</a>
+                  <ul>
+                    <li><a href="#How-Spring-MVC-Works">How Spring MVC Works</a></li>
+                    <li><a href="#The-REST-API-we'll-build">The REST API we'll build</a></li>
+                    <li><a href="#Creating-a-business-service">Creating a business service</a></li>
+                    <li><a href="#Getting-a-single-resource">Getting a single resource</a></li>
+                    <li><a href="#Creating-a-new-resource-using-POST">Creating a new resource using POST</a></li>
+                    <li><a href="#Implementing-Update-and-Delete">Implementing Update and Delete</a></li>
+                  </ul>
+                </li>
+                <li>    
+                  <a href="#unit3">Unit 3 Booting Spring Boot</a>
+                  <ul>
+                    <li><a href="#Unit-Overview">Unit Overview</a></li>
+                    <li><a href="#Using-Spring-Initializr">Using Spring Initializr</a></li>
+                    <li><a href="#Using-Spring-Boot-CLI">Using Spring Boot CLI</a></li>
+                    <li><a href="#Using-the-STS-IDE">Using the STS IDE</a></li>
+                    <li><a href="#Using-application-properties">Using application properties</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#unit4">Unit 4 Spring Data JPA: The Data Tier</a>
+                  <ul>
+                    <li><a href="#What-is-JPA?">What is JPA?</a></li>
+                    <li><a href="#Adding-Spring-Data-JPA">Adding Spring Data JPA</a></li>
+                    <li><a href="#Creating-a-Spring-Data-JPA-Repository">Creating a Spring Data JPA Repository</a></li>
+                    <li><a href="#Making-Crud-Operations-with-Repository">Making Crud Operations with Repository</a></li>
+                    <li><a href="#Adding-Course-APIs">Adding Course APIs</a></li>
+                    <li><a href="#Adding-Entity-Relationship-and-Extending-Repository">Adding Entity Relationship and Extending Repository</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#unit5">Unit 5 Deployment and monitoring</a>
+                  <ul>
+                    <li><a href="#Packaging-and-running-a-Spring-Boot-app">Packaging and running a Spring Boot app</a></li>
+                    <li><a href="#Spring-Boot-Actuator">Spring Boot Actuator</a></li>
+                  </ul>
+                </li>
+            </ul>
+
 
 
 <!-- Unit 1 -->
@@ -108,15 +131,37 @@ Check if you have JDK installed and the <a href="https://docs.oracle.com/cd/E195
 <!-- Starting a Spring Boot application -->
 <p><a name="Starting-a-Spring-Boot-application"></a></p>
 <h2><a href="#Starting-a-Spring-Boot-application">Starting a Spring Boot application</a></h2>
+<p>Be sure to check following:</p>
 <img src="https://mharoot.github.io/SpringBootQuickStart/images/3.PNG"/>
+<p>Be sure to fill following:</p>
 <img src="https://mharoot.github.io/SpringBootQuickStart/images/4.PNG"/>
+<p>Add Spring Boot Framework as the Parent Class In pom.xml for Maven to deal with:</p>
+<img src="https://mharoot.github.io/SpringBootQuickStart/images/5.PNG"/>
+<p>Add Dependecies section with Initial Web Dependency From Spring Boot to get us started with our REST API:</p>
+<img src="https://mharoot.github.io/SpringBootQuickStart/images/6.PNG"/>
+<p>There will be errors in your project now.  Download the source to dismiss them:</p>
+<img src="https://mharoot.github.io/SpringBootQuickStart/images/7.PNG"/>
+<p>Add this to pom.xml as well.  We need our JDK version to be what our JAVA_PATH env variable is <a href="#Setting-Up-Development-Environment">pointing to</a>:</p>
+<img src="https://mharoot.github.io/SpringBootQuickStart/images/8.PNG"/>
 <!-- Spring Boot startup steps -->
 <p><a name="Spring-Boot-startup-steps"></a></p>
 <h2><a href="#Spring-Boot-startup-steps">Spring Boot startup steps</a></h2>
-<img src="https://mharoot.github.io/SpringBootQuickStart/images/5.PNG"/>
-<img src="https://mharoot.github.io/SpringBootQuickStart/images/6.PNG"/>
-<img src="https://mharoot.github.io/SpringBootQuickStart/images/7.PNG"/>
-<img src="https://mharoot.github.io/SpringBootQuickStart/images/8.PNG"/>
+<p>Create Entry Point For Our Spring Boot Application:</p>
+<pre style="margin: 0; line-height: 125%">
+  <span style="color: #008800; font-weight: bold">package</span> io<span style="color: #333333">.</span><span style="color: #0000CC">javabrains</span><span style="color: #333333">.</span><span style="color: #0000CC">springbootstarter</span><span style="color: #333333">;</span>
+
+  <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">org.springframework.boot.SpringApplication</span><span style="color: #333333">;</span>
+  <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">org.springframework.boot.autoconfigure.SpringBootApplication</span><span style="color: #333333">;</span>
+  
+  <span style="color: #555555; font-weight: bold">@SpringBootApplication</span>
+  <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">CourseApiApp</span> <span style="color: #333333">{</span>
+  
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+      SpringApplication<span style="color: #333333">.</span><span style="color: #0000CC">run</span><span style="color: #333333">(</span>CourseApiApp<span style="color: #333333">.</span><span style="color: #0000CC">class</span><span style="color: #333333">,</span> args<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+  
+  <span style="color: #333333">}</span>
+</pre>
 <!-- Adding a REST Controller -->
 <p><a name="Adding-a-REST-Controller"></a></p>
 <h2><a href="#Adding-a-REST-Controller">Adding a REST Controller</a></h2>
@@ -127,88 +172,90 @@ Check if you have JDK installed and the <a href="https://docs.oracle.com/cd/E195
 <!-- Returning Objects From Controller -->
 <p><a name="Returning-Objects-From-Controller"></a></p>
 <h2><a href="#Returning-Objects-From-Controller">Returning Objects From Controller</a></h2>
+<p>More Controller Mappings:</p>
+
+              <!-- Unit 2 -->
+              <p><a name="unit2"></a></p>
+              <h1><a href="#unit2">Unit 2 Spring MVC: The View Tier</a></h1>
+              <!-- How Spring MVC Works -->
+              <p><a name="How-Spring-MVC-Works"></a></p>
+              <h2><a href="#How-Spring-MVC-Works">How Spring MVC Works</a></h2>
+              <!-- The REST API we'll build -->
+              <p><a name="The-REST-API-we'll-build"></a></p>
+              <h2><a href="#The-REST-API-we'll-build">The REST API we'll build</a></h2>
+              <!-- Creating a business service -->
+              <p><a name="Creating-a-business-service"></a></p>
+              <h2><a href="#Creating-a-business-service">Creating a business service</a></h2>
+              <!-- Getting a single resource -->
+              <p><a name="Getting-a-single-resource"></a></p>
+              <h2><a href="#Getting-a-single-resource">Getting a single resource</a></h2>
+              <!-- Creating a new resource using POST -->
+              <p><a name="Creating-a-new-resource-using-POST"></a></p>
+              <h2><a href="#Creating-a-new-resource-using-POST">Creating a new resource using POST</a></h2>
+              <!-- Implementing Update and Delete -->
+              <p><a name="Implementing-Update-and-Delete"></a></p>
+              <h2><a href="#Implementing-Update-and-Delete">Implementing Update and Delete</a></h2>
 
 
-<!-- Unit 2 -->
-<p><a name="unit2"></a></p>
-<h1><a href="#unit2">Unit 2 Spring MVC: The View Tier</a></h1>
-<!-- How Spring MVC Works -->
-<p><a name="How-Spring-MVC-Works"></a></p>
-<h2><a href="#How-Spring-MVC-Works">How Spring MVC Works</a></h2>
-<!-- The REST API we'll build -->
-<p><a name="The-REST-API-we'll-build"></a></p>
-<h2><a href="#The-REST-API-we'll-build">The REST API we'll build</a></h2>
-<!-- Creating a business service -->
-<p><a name="Creating-a-business-service"></a></p>
-<h2><a href="#Creating-a-business-service">Creating a business service</a></h2>
-<!-- Getting a single resource -->
-<p><a name="Getting-a-single-resource"></a></p>
-<h2><a href="#Getting-a-single-resource">Getting a single resource</a></h2>
-<!-- Creating a new resource using POST -->
-<p><a name="Creating-a-new-resource-using-POST"></a></p>
-<h2><a href="#Creating-a-new-resource-using-POST">Creating a new resource using POST</a></h2>
-<!-- Implementing Update and Delete -->
-<p><a name="Implementing-Update-and-Delete"></a></p>
-<h2><a href="#Implementing-Update-and-Delete">Implementing Update and Delete</a></h2>
-
-
-<!-- Unit 3 -->
-<p><a name="unit3"></a></p>
-<h1><a href="#unit3">Unit 3 Booting Spring Boot</a></h1>
-<!-- Unit Overview -->
-<p><a name="Unit-Overview"></a></p>
-<h2><a href="#Unit-Overview">Unit Overview</a></h2>
-<!-- Using Spring Initializr -->
-<p><a name="Using-Spring-Initializr"></a></p>
-<h2><a href="#Using-Spring-Initializr">Using Spring Initializr</a></h2>
-<!-- Using Spring Boot CLI -->
-<p><a name="Using-Spring-Boot-CLI"></a></p>
-<h2><a href="#Using-Spring-Boot-CLI">Using Spring Boot CLI</a></h2>
-<!-- Using the STS IDE -->
-<p><a name="Using-the-STS-IDE"></a></p>
-<h2><a href="#Using-the-STS-IDE">Using the STS IDE</a></h2>
-<!-- Using application properties -->
-<p><a name="Using-application-properties"></a></p>
-<h2><a href="#Using-application-properties">Using application properties</a></h2>
-
-
-
-<!-- Unit 4 -->
-<p><a name="unit4"></a></p>
-<h1><a href="#unit4">Unit 4 Spring Data JPA: The Data Tier</a></h1>
-<!-- What is JPA? -->
-<p><a name="What-is-JPA?"></a></p>
-<h2><a href="#What-is-JPA?">What is JPA?</a></h2>
-<!-- Adding Spring Data JPA -->
-<p><a name="Adding-Spring-Data-JPA"></a></p>
-<h2><a href="#Adding-Spring-Data-JPA">Adding Spring Data JPA</a></h2>
-<!-- Creating a Spring Data JPA Repository -->
-<p><a name="Creating-a-Spring-Data-JPA-Repository"></a></p>
-<h2><a href="#Creating-a-Spring-Data-JPA-Repository">Creating a Spring Data JPA Repository</a></h2>
-<!-- Making Crud Operations with Repository -->
-<p><a name="Making-Crud-Operations-with-Repository"></a></p>
-<h2><a href="#Making-Crud-Operations-with-Repository">Making Crud Operations with Repository</a></h2>
-<!-- Adding Course APIs -->
-<p><a name="Adding-Course-APIs"></a></p>
-<h2><a href="#Adding-Course-APIs">Adding Course APIs</a></h2>
-<!-- Adding Entity Relationship and Extending Repository -->
-<p><a name="Adding-Entity-Relationship-and-Extending-Repository"></a></p>
-<h2><a href="#Adding-Entity-Relationship-and-Extending-Repository">Adding Entity Relationship and Extending Repository</a></h2>
+              <!-- Unit 3 -->
+              <p><a name="unit3"></a></p>
+              <h1><a href="#unit3">Unit 3 Booting Spring Boot</a></h1>
+              <!-- Unit Overview -->
+              <p><a name="Unit-Overview"></a></p>
+              <h2><a href="#Unit-Overview">Unit Overview</a></h2>
+              <!-- Using Spring Initializr -->
+              <p><a name="Using-Spring-Initializr"></a></p>
+              <h2><a href="#Using-Spring-Initializr">Using Spring Initializr</a></h2>
+              <!-- Using Spring Boot CLI -->
+              <p><a name="Using-Spring-Boot-CLI"></a></p>
+              <h2><a href="#Using-Spring-Boot-CLI">Using Spring Boot CLI</a></h2>
+              <!-- Using the STS IDE -->
+              <p><a name="Using-the-STS-IDE"></a></p>
+              <h2><a href="#Using-the-STS-IDE">Using the STS IDE</a></h2>
+              <!-- Using application properties -->
+              <p><a name="Using-application-properties"></a></p>
+              <h2><a href="#Using-application-properties">Using application properties</a></h2>
 
 
 
-<!-- Unit 5 -->
-<p><a name="unit5"></a></p>
-<h1><a href="#unit5">Unit 5 Deployment and monitoring</a></h1>
-<!-- Packaging and running a Spring Boot app -->
-<p><a name="Packaging-and-running-a-Spring-Boot-app"></a></p>
-<h2><a href="#Packaging-and-running-a-Spring-Boot-app">Packaging and running a Spring Boot app</a></h2>
-<!-- Spring Boot Actuator -->
-<p><a name="Spring-Boot-Actuator"></a></p>
-<h2><a href="#Spring-Boot-Actuator">Spring Boot Actuator</a></h2>
-</div>
-</article>
-</div>
+              <!-- Unit 4 -->
+              <p><a name="unit4"></a></p>
+              <h1><a href="#unit4">Unit 4 Spring Data JPA: The Data Tier</a></h1>
+              <!-- What is JPA? -->
+              <p><a name="What-is-JPA?"></a></p>
+              <h2><a href="#What-is-JPA?">What is JPA?</a></h2>
+              <!-- Adding Spring Data JPA -->
+              <p><a name="Adding-Spring-Data-JPA"></a></p>
+              <h2><a href="#Adding-Spring-Data-JPA">Adding Spring Data JPA</a></h2>
+              <!-- Creating a Spring Data JPA Repository -->
+              <p><a name="Creating-a-Spring-Data-JPA-Repository"></a></p>
+              <h2><a href="#Creating-a-Spring-Data-JPA-Repository">Creating a Spring Data JPA Repository</a></h2>
+              <!-- Making Crud Operations with Repository -->
+              <p><a name="Making-Crud-Operations-with-Repository"></a></p>
+              <h2><a href="#Making-Crud-Operations-with-Repository">Making Crud Operations with Repository</a></h2>
+              <!-- Adding Course APIs -->
+              <p><a name="Adding-Course-APIs"></a></p>
+              <h2><a href="#Adding-Course-APIs">Adding Course APIs</a></h2>
+              <!-- Adding Entity Relationship and Extending Repository -->
+              <p><a name="Adding-Entity-Relationship-and-Extending-Repository"></a></p>
+              <h2><a href="#Adding-Entity-Relationship-and-Extending-Repository">Adding Entity Relationship and Extending Repository</a></h2>
 
-</body>
+
+
+              <!-- Unit 5 -->
+              <p><a name="unit5"></a></p>
+              <h1><a href="#unit5">Unit 5 Deployment and monitoring</a></h1>
+              <!-- Packaging and running a Spring Boot app -->
+              <p><a name="Packaging-and-running-a-Spring-Boot-app"></a></p>
+              <h2><a href="#Packaging-and-running-a-Spring-Boot-app">Packaging and running a Spring Boot app</a></h2>
+              <!-- Spring Boot Actuator -->
+              <p><a name="Spring-Boot-Actuator"></a></p>
+              <h2><a href="#Spring-Boot-Actuator">Spring Boot Actuator</a></h2>
+            </div>
+          </article>
+        </div>
+      </div>	
+      <script src="./assets/js/sidebar.js" type="text/javascript"></script>
+    </div>
+  </body>
 </html>
