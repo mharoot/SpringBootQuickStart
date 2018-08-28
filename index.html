@@ -203,20 +203,37 @@ Check if you have JDK installed and the <a href="https://docs.oracle.com/cd/E195
               <!-- Unit Overview -->
               <p><a name="Unit-Overview"></a></p>
               <h2><a href="#Unit-Overview">Unit Overview</a></h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yGeI_WORmco" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <!-- Using Spring Initializr -->
               <p><a name="Using-Spring-Initializr"></a></p>
               <h2><a href="#Using-Spring-Initializr">Using Spring Initializr</a></h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uDhumjWApl0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <!-- Using Spring Boot CLI -->
               <p><a name="Using-Spring-Boot-CLI"></a></p>
               <h2><a href="#Using-Spring-Boot-CLI">Using Spring Boot CLI</a></h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/bNqD5P-huJc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <!-- Using the STS IDE -->
               <p><a name="Using-the-STS-IDE"></a></p>
               <h2><a href="#Using-the-STS-IDE">Using the STS IDE</a></h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BrIRiz_QaEA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <!-- Using application properties -->
               <p><a name="Using-application-properties"></a></p>
               <h2><a href="#Using-application-properties">Using application properties</a></h2>
-
-
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/fcHYCCF9myY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #888888">#==== connect to mysql ======#</span>
+<span style="color: #0000CC">spring.jpa.hibernate.ddl-auto</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">update</span>
+<span style="color: #0000CC">spring.datasource.url</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">jdbc:mysql://localhost:3306/mysqltutorial?useSSL=false</span>
+<span style="color: #0000CC">spring.datasource.username</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">root</span>
+<span style="color: #0000CC">spring.datasource.password</span><span style="color: #333333">=</span>
+<span style="color: #0000CC">spring.datasource.driver-class-name</span><span style="color: #333333">=</span><span style="background-color: #fff0f0">com.mysql.jdbc.Driver</span>
+<span style="color: #0000CC">spring.jpa.properties.hibernate.dialect</span> <span style="color: #333333">=</span> <span style="background-color: #fff0f0">org.hibernate.dialect.MySQL5Dialect</span>
+</pre></td></tr></table></div>
 
               <!-- Unit 4 -->
               <p><a name="unit4"></a></p>
@@ -227,9 +244,84 @@ Check if you have JDK installed and the <a href="https://docs.oracle.com/cd/E195
               <!-- Adding Spring Data JPA -->
               <p><a name="Adding-Spring-Data-JPA"></a></p>
               <h2><a href="#Adding-Spring-Data-JPA">Adding Spring Data JPA</a></h2>
+              <p>Add these 3 dependencies to <b>pom.xml</b> in order to use MySQL database repository:
+              <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></td><td><pre style="margin: 0; line-height: 125%">	<span style="color: #007700">&lt;dependency&gt;</span>
+		<span style="color: #007700">&lt;groupId&gt;</span>org.springframework.boot<span style="color: #007700">&lt;/groupId&gt;</span>
+		<span style="color: #007700">&lt;artifactId&gt;</span>spring-boot-starter-test<span style="color: #007700">&lt;/artifactId&gt;</span>
+		<span style="color: #007700">&lt;scope&gt;</span>test<span style="color: #007700">&lt;/scope&gt;</span>
+	<span style="color: #007700">&lt;/dependency&gt;</span>
+	<span style="color: #007700">&lt;dependency&gt;</span>
+		<span style="color: #007700">&lt;groupId&gt;</span>mysql<span style="color: #007700">&lt;/groupId&gt;</span>
+		<span style="color: #007700">&lt;artifactId&gt;</span>mysql-connector-java<span style="color: #007700">&lt;/artifactId&gt;</span>
+	<span style="color: #007700">&lt;/dependency&gt;</span>
+	<span style="color: #007700">&lt;dependency&gt;</span>
+		<span style="color: #007700">&lt;groupId&gt;</span>org.springframework.boot<span style="color: #007700">&lt;/groupId&gt;</span>
+		<span style="color: #007700">&lt;artifactId&gt;</span>spring-boot-starter-data-jpa<span style="color: #007700">&lt;/artifactId&gt;</span>
+	<span style="color: #007700">&lt;/dependency&gt;</span>
+</pre></td></tr></table></div>
+
               <!-- Creating a Spring Data JPA Repository -->
               <p><a name="Creating-a-Spring-Data-JPA-Repository"></a></p>
               <h2><a href="#Creating-a-Spring-Data-JPA-Repository">Creating a Spring Data JPA Repository</a></h2>
+              <p>Be sure to add the <b><i>@Entity</i></b> annotation in <b>Topic.java</b>:</p>
+              <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">package</span> io<span style="color: #333333">.</span><span style="color: #0000CC">javabrains</span><span style="color: #333333">.</span><span style="color: #0000CC">springbootstarter</span><span style="color: #333333">.</span><span style="color: #0000CC">topic</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">javax.persistence.Entity</span><span style="color: #333333">;</span>
+
+<span style="color: #555555; font-weight: bold">@Entity</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Topic</span> <span style="color: #333333">{</span>
+</pre></td></tr></table></div>
+              
+            <p>If you have a primary key be sure to add <b><i>@Id</i></b> annotation in <b>Topic.java</b></p>
+            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">javax.persistence.Id</span><span style="color: #333333">;</span>
+
+<span style="color: #555555; font-weight: bold">@Entity</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Topic</span> <span style="color: #333333">{</span>
+
+	<span style="color: #555555; font-weight: bold">@Id</span>
+	<span style="color: #008800; font-weight: bold">private</span> String id<span style="color: #333333">;</span>
+</pre></td></tr></table></div>
+
+<p>We can inherit all the CRUD functionality.  Creating TopicRepository.java we must fill in the generic type for the Entity Model and Primary Key ID.   In this case the Entiy Model is Topic and the Primary Key ID is a String:</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">package</span> io<span style="color: #333333">.</span><span style="color: #0000CC">javabrains</span><span style="color: #333333">.</span><span style="color: #0000CC">springbootstarter</span><span style="color: #333333">.</span><span style="color: #0000CC">topic</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">org.springframework.data.repository.CrudRepository</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">interface</span> <span style="color: #BB0066; font-weight: bold">TopicRepository</span> <span style="color: #008800; font-weight: bold">extends</span> CrudRepository<span style="color: #333333">&lt;</span>Topic<span style="color: #333333">,</span> String<span style="color: #333333">&gt;</span> <span style="color: #333333">{</span>
+
+<span style="color: #333333">}</span>
+</pre></td></tr></table></div>
+
+
               <!-- Making Crud Operations with Repository -->
               <p><a name="Making-Crud-Operations-with-Repository"></a></p>
               <h2><a href="#Making-Crud-Operations-with-Repository">Making Crud Operations with Repository</a></h2>
